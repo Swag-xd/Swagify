@@ -1,0 +1,28 @@
+.tags{
+    height: 55px;
+    display: flex; 
+    background-color: #090909;
+    align-items: center;
+    column-gap: 14px;
+    padding: 0px 10px;
+    border-radius:8px;
+    margin: 3px;
+    /* overflow: hidden; */
+}
+.options{
+    color: aliceblue;
+    padding: 5px 10px;
+    width: fit-content;
+    background-color: #181818;
+    font-family: sans-serif ;
+    font-size:14px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.options:hover{
+    color:black;
+    background-color: white;
+}
+

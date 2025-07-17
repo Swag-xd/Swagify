@@ -1,0 +1,60 @@
+.SongBar{
+        background-color: #181818;
+        height: 56px;
+        margin: 3px 3px 3px 8px;
+        border-radius: 8px;
+        color: whitesmoke;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        /* overflow: hidden; */
+}
+
+.SongImg{
+   height: 55px;
+   width: 100px;
+   padding: 0px 10px;
+}
+
+.SongImg img{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    padding: 3px;
+    /* border-radius: 30px; */
+}
+.SongInfo{
+        /* background-color: blue;  */
+        text-align: center;
+        width: 15%;
+        margin: 15px 10px;
+}
+.audiobar{
+        /* background-color: yellow; */
+        width: 1100px;
+        display: flex;
+}
+.AudioPlayer{
+        /* background-color: yellow; */
+        width: 1000px;
+        padding: 10px 15px;
+        margin-left: 15px;
+}
+.NextBtn{
+        background-color: whitesmoke;
+        color: #181818;
+        padding: 5px 10px;
+        margin: 13px;
+        border-radius: 20px;
+        border: none;
+        font-family: sans-serif;
+        font-weight: bolder;
+}
+.NextBtn:hover{
+        background-color: #181818;
+        color:whitesmoke;
+        transition: 0.3s;
+}

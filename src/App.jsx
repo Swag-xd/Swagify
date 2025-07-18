@@ -6,7 +6,7 @@ import Tags from './Components/tags/Tags';
 import PlayTag from './Components/playtag/PlayTag';
 import Screen from './Components/screen/Screen';
 import songs from './songsdata/songs';
-import'./app.css'
+import'./App.css'
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);

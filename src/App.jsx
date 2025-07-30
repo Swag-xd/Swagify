@@ -10,6 +10,7 @@ import'./App.css'
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [searchTerm, setSearchTerm]=useState("")
   const currentSong = songs[currentIndex];
 
   const handleSongSelect = (song) => {
@@ -25,7 +26,7 @@ function App() {
     <>
     <div>
       <div className="heading">
-        <Header/>
+        <Header setSearchTerm={setSearchTerm}/>
         <Tags/>
       </div>
       <mainscreen className="screenContain">

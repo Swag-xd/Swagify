@@ -9,7 +9,9 @@ export default class Screen extends Component{
             <section className={styles.Screen}>
                 <h2 className={styles.TrendingHeading}> Trending Right Now!</h2>
                 <div className={styles.TrendySongs}>
-                   <ScreenSongs onSongSelect={this.props.onSongSelect}/>
+                   <ScreenSongs 
+                   onSongSelect={this.props.onSongSelect}
+                   searchTerm={this.props.searchTerm}/>
                 </div>
                 <h2 className={styles.ArtistHeading}>Artists</h2>
                 <div>

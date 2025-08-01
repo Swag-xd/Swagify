@@ -7,8 +7,10 @@ import User from '../../assets/user.png';
 
 export default class Header extends Component {
 
+	
 
 	render() {
+		const {searchTerm, setSearchTerm} = this.props
 		return (
 			<>
 				<header className={styles.header}>
@@ -32,7 +34,14 @@ export default class Header extends Component {
 								type='text'
 								className={styles.SBar}
 								placeholder='Songs, Artist & more...'
-								onChange={(e) => this.props.setSeachTerm(e.target.value)}
+								value={searchTerm}
+								onChange={(e) =>setSearchTerm(e.target.value)}
+								onKeyDown={(e) => {
+									if (e.key === 'Enter') {
+										// e.preventDefault();
+										console.log("Search term entered:", this.props.searchTerm);
+									}
+								}}
 							/>
 
 							<div className={styles.SIcon}>

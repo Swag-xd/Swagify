@@ -12,11 +12,17 @@ export default class ScreenSongs extends Component {
     render() {
         const searchTerm = this.props.searchTerm || "";
 
-        const filteredSongs = songs.filter((song) =>
-            song.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            song.artist.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            song.genre.toLowerCase().includes(searchTerm.toLowerCase())
-        );
+        const filteredSongs = songs.filter((song) => {
+            const title = song.title?.toLowerCase() || "";
+            const artist = song.artist?.toLowerCase() || "";
+            const genre = song.genre?.toLowerCase() || "";
+            return (
+                title.includes(searchTerm.toLowerCase()) ||
+                artist.includes(searchTerm.toLowerCase()) ||
+                genre.includes(searchTerm.toLowerCase())
+            );
+        });
+
         return (
             <>
                 <div className={styles.TrendingSongs}>

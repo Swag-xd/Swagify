@@ -106,5 +106,40 @@
 }
 
 
+/* For mobile screen friendly */
+
+
+@media (max-width: 420px) {
+    .header {
+        height: 50px;
+        padding: 0 6px;
+    }
+
+    .logowrapper {
+        gap: 6px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .searchbox {
+        width: 150px;
+    }
+
+    .SBar {
+        width: 100px;
+    }
+
+    .UIcon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .UIcon img {
+        width: 20px;
+        height: 20px;
+    }
+}
 
 
